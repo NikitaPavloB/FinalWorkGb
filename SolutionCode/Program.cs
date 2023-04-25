@@ -5,29 +5,6 @@
 
 Console.Clear();
 
-Console.Write("Введите количество строк в массиве: ");
-int n = int.Parse(Console.ReadLine());
-
-string[] array = new string[n];
-for (int i = 0; i < n; i++)
-{
-  Console.Write($"Введите строку {i + 1}: ");
-  array[i] = Console.ReadLine().Trim(); // удаление пробелов в начале и конце строки
-}
-
-string[] result = FilterArray(array);
-
-Console.WriteLine();
-
-Console.WriteLine("Исходный массив:");
-PrintArray(array);
-
-Console.WriteLine();
-
-Console.WriteLine("Массив с элементами длиной не более 3 символов:");
-PrintArray(result);
-
-
 string[] FilterArray(string[] array)
 {
   int count = 0;
@@ -36,7 +13,7 @@ string[] FilterArray(string[] array)
     if (array[i].Trim().Length <= 3)
     {
       count++; // удаление пробелов в начале и конце строки
-    } 
+    }
   }
 
   string[] result = new string[count];
@@ -68,4 +45,24 @@ void PrintArray(string[] array)
 }
 
 
+Console.Write("Введите количество строк в массиве: ");
+int n = int.Parse(Console.ReadLine());
 
+string[] array = new string[n];
+for (int i = 0; i < n; i++)
+{
+  Console.Write($"Введите строку {i + 1}: ");
+  array[i] = Console.ReadLine().Trim(); // удаление пробелов в начале и конце строки
+}
+
+string[] result = FilterArray(array);
+
+Console.WriteLine();
+
+Console.WriteLine("Исходный массив:");
+PrintArray(array);
+
+Console.WriteLine();
+
+Console.WriteLine("Массив с элементами длиной не более 3 символов:");
+PrintArray(result);
