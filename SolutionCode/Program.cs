@@ -12,7 +12,7 @@ string[] array = new string[n];
 for (int i = 0; i < n; i++)
 {
   Console.Write($"Введите строку {i + 1}: ");
-  array[i] = Console.ReadLine();
+  array[i] = Console.ReadLine().Trim(); // удаление пробелов в начале и конце строки
 }
 
 string[] result = FilterArray(array);
@@ -29,16 +29,16 @@ string[] FilterArray(string[] array)
   int count = 0;
   for (int i = 0; i < array.Length; i++)
   {
-    if (array[i].Length <= 3) count++;
+    if (array[i].Trim().Length <= 3) count++; // удаление пробелов в начале и конце строки
   }
 
   string[] result = new string[count];
   int index = 0;
   for (int i = 0; i < array.Length; i++)
   {
-    if (array[i].Length <= 3)
+    if (array[i].Trim().Length <= 3) // удаление пробелов в начале и конце строки
     {
-      result[index] = array[i];
+      result[index] = array[i].Trim(); // удаление пробелов в начале и конце строки
       index++;
     }
   }
@@ -59,5 +59,6 @@ void PrintArray(string[] array)
   }
   Console.WriteLine("]");
 }
+
 
 
