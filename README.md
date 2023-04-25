@@ -13,10 +13,16 @@
 
 ## Создать репозиторий на GitHub.
 ### __Инструкция для чайников__
-1. Перейти на официальный сайт https://github.com/
+1. Перейти на официальный сайт 
+```
+https://github.com/
+```
 2. Зарегистрироваться.
 3. Создать новый репозиторий.
-4. Итог: https://github.com/NikitaPavloB/FinalWorkGb.git
+4. Итог: 
+```
+https://github.com/NikitaPavloB/FinalWorkGb.git
+```
 
 ## *Нарисовать блок-схему алгоритма.*
 
