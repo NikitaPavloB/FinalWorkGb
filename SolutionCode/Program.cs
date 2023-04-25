@@ -17,8 +17,12 @@ for (int i = 0; i < n; i++)
 
 string[] result = FilterArray(array);
 
+Console.WriteLine();
+
 Console.WriteLine("Исходный массив:");
 PrintArray(array);
+
+Console.WriteLine();
 
 Console.WriteLine("Массив с элементами длиной не более 3 символов:");
 PrintArray(result);
@@ -29,7 +33,10 @@ string[] FilterArray(string[] array)
   int count = 0;
   for (int i = 0; i < array.Length; i++)
   {
-    if (array[i].Trim().Length <= 3) count++; // удаление пробелов в начале и конце строки
+    if (array[i].Trim().Length <= 3)
+    {
+      count++; // удаление пробелов в начале и конце строки
+    } 
   }
 
   string[] result = new string[count];
