@@ -44,4 +44,4 @@ https://github.com/NikitaPavloB/FinalWorkGb.git
 
 ## Использовать контроль версий в работе над этим небольшим проектом
 
-<img src= "Reflog.jpg" alt="BlockDiagramPavlov" width="600"/>
+<img src= "Reflog.jpg" alt="Reflog.jpg" width="600"/>
